@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Design tokens · paleta unificada (Propuesta G + Video A2)
+   Donde ambas propuestas tenían valores casi iguales se eligió uno solo:
+     fondo  #F6EFF3 / #F6EEF1  → #F6EEF1
+     hover  #611232 / #691C32  → #691C32
+     oro    #DDC9A3 / #DCC39A  → #DCC39A
+   ========================================================================== */
+/* Fuentes alojadas en el sitio (sin terceros): variables, solo latín, woff2.
+   Un archivo por familia cubre todos los pesos usados. */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800 900;
+  font-display: swap;
+  src: url("../fonts/montserrat-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../fonts/noto-sans-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Guinda (primario) */
+  --c-guinda:        #9F2241;
+  --c-guinda-dark:   #691C32;
+  --c-guinda-deep:   #3A0C1C;   /* fondo del reproductor */
+  --c-guinda-ink:    #3A1F28;
+
+  /* Rosas de apoyo */
+  --c-rose-50:       #F7E6EC;
+  --c-rose-100:      #F4DCE4;
+  --c-rose-200:      #ECC2D0;
+  --c-rose-300:      #E8C9D4;   /* contorno del número gigante */
+  --c-rose-400:      #D9A9B9;
+  --c-rose-line:     #EBDDE3;
+
+  /* Oro (acento) */
+  --c-oro:           #BC955C;
+  --c-oro-300:       #DCC39A;
+  --c-oro-100:       #F3E8D6;
+  --c-hl:            #F2DDB0;   /* subrayado marcador de títulos */
+  --c-hl-strong:     #EBC98A;
+
+  /* Verde (acción de descarga) */
+  --c-verde:         #10312B;
+  --c-verde-700:     #235B4E;
+  --c-verde-50:      #E6EFEC;
+
+  /* Neutros */
+  --c-bg:            #F6EEF1;
+  --c-surface:       #FFFFFF;
+  --c-ink:           #1E1A1C;
+  --c-ink-2:         #3E363B;
+  --c-ink-3:         #5E5358;
+
+  /* Tipografía */
+  --f-title: "Montserrat", "Noto Sans", system-ui, sans-serif;
+  --f-body:  "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Radios */
+  --r-card:  30px;
+  --r-hero:  36px;
+  --r-doc:   28px;
+  --r-panel: 20px;
+  --r-btn:   14px;
+
+  /* Sombras */
+  --shadow-card: 0 1px 0 #EAD6DD, 0 22px 40px -26px rgba(105, 28, 50, .45);
+  --shadow-lift: 0 0 0 2px var(--c-guinda), 0 36px 48px -24px rgba(105, 28, 50, .5);
+  --shadow-modal: 0 40px 80px -30px rgba(30, 10, 18, .6);
+
+  /* Movimiento */
+  --ease-out:    cubic-bezier(.2, .8, .2, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --ease-in:     cubic-bezier(.4, 0, 1, 1);
+  --t-fast:  .2s;
+  --t-base:  .35s;
+  --t-slow:  .6s;
+}
